@@ -6,7 +6,10 @@
 </head>
 <script>
     function validateSubjectNumber(){
-        //id = document.forms["form"]["subjectNumber"];
+        id = document.forms["form"]["subjectNumber"];
+        if(id < 100 && id >= 0){
+            return true;
+        }
         return false;
     }
 </script>
